@@ -1,14 +1,15 @@
 <template>
-  <v-app id="inspire">
+  <v-app id="inspire" theme="dark">
     <v-navigation-drawer
         expand-on-hover
         rail
+        color="indigo"
       >
         <v-list>
           <v-list-item
-            prepend-avatar="https://randomuser.me/api/portraits/women/85.jpg"
-            title="Sandra Adams"
-            subtitle="sandra_a88@gmailcom"
+            prepend-avatar="/supernature icon.png"
+            title="Supernature Travel"
+            subtitle="Basic Itinerary"
           ></v-list-item>
         </v-list>
 
@@ -16,10 +17,10 @@
 
         <v-list density="compact" nav>
           <v-list-item 
-          prepend-icon="mdi-arrow-up-bold-box-outline" 
+          prepend-icon="mdi-view-list" 
           size="large"
-          title="Upload" 
-          value="upload">
+          title="Graph" 
+          value="graph">
           </v-list-item>
           <v-list-item 
           prepend-icon="mdi-arrow-up-bold-box-outline" 
@@ -30,8 +31,10 @@
         </v-list>
       </v-navigation-drawer>
 
-    <v-app-bar class="blue white--text">
-      <v-toolbar-title class="blue white--text">Application</v-toolbar-title>
+    <v-app-bar>
+      <v-toolbar-title>
+        Placeholder
+      </v-toolbar-title>
     </v-app-bar>
 
     <v-main>
