@@ -4,7 +4,7 @@ import Table from '../views/TableView.vue'
 
 const routes = [
   {
-    path: '/',
+    path: '/upload',
     name: 'upload',
     component: Upload
   },
