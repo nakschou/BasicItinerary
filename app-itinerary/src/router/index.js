@@ -9,8 +9,8 @@ const routes = [
     component: Upload
   },
   {
-    path: '/about',
-    name: 'about',
+    path: '/table',
+    name: 'table',
     component: Table
   }
 ]

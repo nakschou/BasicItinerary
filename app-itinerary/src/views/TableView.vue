@@ -1,4 +1,7 @@
 <template>
+  <h1>
+    Table
+  </h1>
   <Table />
 </template>
 
