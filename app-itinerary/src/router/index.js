@@ -1,5 +1,5 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import Upload from '../views/UploadView.vue'
+import Upload from '../views/UploadView2.vue'
 import Table from '../views/TableView.vue'
 
 const routes = [

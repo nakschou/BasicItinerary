@@ -17,6 +17,7 @@
     "portal-vue": "^3.0.0",
     "roboto-fontface": "*",
     "vue": "^3.2.47",
+    "vue-cli": "^2.9.6",
     "vue-router": "^4.0.3",
     "vuetify": "^3.1.13",
     "vuex": "^4.0.0",

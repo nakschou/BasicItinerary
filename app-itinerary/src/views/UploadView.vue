@@ -24,28 +24,15 @@ export default {
       const workbook = XLSX.read(data, { type: 'binary' });
       const sheetName = workbook.SheetNames[0];
       const worksheet = workbook.Sheets[sheetName];
-      const sheetData = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
+      const sheetData = XLSX.utils.sheet_to_json(worksheet);
 
         // Map the header row to column names
-        console.log(sheetData[0])
-        this.headers = sheetData[0].map((header) => {
-          return {
-            text: header,
-            value: header,
-          };
-        });
-
-        // Remove the header row from the data
-        sheetData.shift();
+        this.headers = Object.keys(sheetData[0]);
 
         // Map each row of data to an object
-        this.tableData = sheetData.map((row) => {
-          const obj = {};
-          this.headers.forEach((header) => {
-            obj[header.value] = row[header.text];
-          });
-          return obj;
-        });
+        this.tableData = sheetData.map(row => Object.values(row));
+        console.log(this.headers)
+        console.log(this.tableData[0])
       };
       reader.readAsBinaryString(file);
     },
