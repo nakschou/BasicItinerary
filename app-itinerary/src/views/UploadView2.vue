@@ -157,6 +157,22 @@ th {
   color: #fff;
 }
 
+.export-button {
+  font-size: 16px;
+  padding: 8px 16px;
+  background-color: #fff;
+  color: #1f46e5;
+  border: 1px solid #1f46e5;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.export-button:hover {
+  background-color: #1f46e5;
+  color: #fff;
+}
+
 .filter-input {
   margin-right: 16px;
   padding: 8px;

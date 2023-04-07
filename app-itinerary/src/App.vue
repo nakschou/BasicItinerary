@@ -18,13 +18,6 @@
         <v-divider></v-divider>
         <v-list density="compact" nav>
           <v-list-item 
-          prepend-icon="mdi-view-list" 
-          size="large"
-          title="Table" 
-          value="table"
-          to="/table">
-          </v-list-item>
-          <v-list-item 
           prepend-icon="mdi-arrow-up-bold-box-outline" 
           size="large"
           title="Upload" 
@@ -39,7 +32,7 @@
       </v-toolbar-title>
     </v-app-bar>
     <v-main>
-      <router-view :key="$route.path"></router-view>
+      <router-view></router-view>
     </v-main>
   </v-app>
 </template>
