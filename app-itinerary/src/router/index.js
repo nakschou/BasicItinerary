@@ -1,6 +1,5 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import Upload from '../views/UploadView2.vue'
-import Table from '../views/TableView.vue'
 
 const routes = [
   {
@@ -8,11 +7,6 @@ const routes = [
     name: 'upload',
     component: Upload
   },
-  {
-    path: '/table',
-    name: 'table',
-    component: Table
-  }
 ]
 
 const router = createRouter({
