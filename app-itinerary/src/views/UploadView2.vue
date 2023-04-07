@@ -39,11 +39,12 @@ export default {
   },
   computed: {
     filteredData() {
-      console.log(this.filterValue)
+      //console.log(this.filterValue)
       if (!this.data || this.filterValue == null || this.filterValue === '') {
         return this.data;
       }
       const filteredRows = this.data.slice(1).filter(row => {
+        //note: hardcoded the number of people to be in the 4th column. can be changed in event of itinerary change.
         const numPeople = Number(row[3]);
         return !isNaN(numPeople) && numPeople == this.filterValue;
       });
