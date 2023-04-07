@@ -1,2 +1,2 @@
 # BasicItinerary
-Quick project to learn JS
+Quick project to start learning JS/html
