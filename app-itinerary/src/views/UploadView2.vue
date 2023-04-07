@@ -39,7 +39,8 @@ export default {
   },
   computed: {
     filteredData() {
-      if (!this.data || this.filterValue === null) {
+      console.log(this.filterValue)
+      if (!this.data || this.filterValue == null || this.filterValue === '') {
         return this.data;
       }
       const filteredRows = this.data.slice(1).filter(row => {
@@ -90,11 +91,11 @@ export default {
       const date = new Date().toISOString().slice(0, 10);
       const filename = `data-${date}.xlsx`;
       XLSX.writeFile(workbook, filename);
-},
-
+    },
   },
 };
 </script>
+
 
 <style>
 table {

@@ -1,6 +1,5 @@
 <template>
   <v-app id="inspire" theme="dark">
-    <router-view :key="$route.path"></router-view>
     <v-navigation-drawer
         expand-on-hover
         rail
